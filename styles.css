@@ -1,5 +1,5 @@
 :root {
-  --primary: #13c0b7;
+  --primary: #15a29bd4;
   --secondary: #c6e921;
   --dull_font: #ffffffba;
 }
@@ -16,25 +16,30 @@ body {
   background-color: hsl(184deg 19% 82%);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 15px;
+  display: grid;
+}
+
+a {
+  text-decoration: none;
+  color: #c01212;
 }
 
 .main-container {
   display: flex;
   flex-direction: column;
-  margin: 60px 20px;
+  margin: 60px 40px;
 }
 
 .container {
-  padding: 15px;
+  padding: 20px;
 }
 
 .top-section {
   background-color: #fff;
-  /* padding: 15px; */
   border-radius: 10px 10px 0 0;
 }
 
-.top-section h1,
+h1,
 h2,
 p {
   margin: 10px 0;
@@ -42,7 +47,7 @@ p {
 
 .top-section h1 {
   color: var(--primary);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .top-section h2 {
@@ -52,7 +57,7 @@ p {
 
 .top-section p {
   color: #00000075;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .subscription {
@@ -61,7 +66,7 @@ p {
 }
 
 .subscription h2 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .subscription p {
@@ -73,6 +78,11 @@ p {
   font-size: 25px;
   padding-right: 5px;
   font-weight: 500;
+  color: #fff;
+}
+
+#para-margin {
+  margin-bottom: 25px;
 }
 
 .per {
@@ -87,4 +97,59 @@ p {
   font-size: 16px;
   border-radius: 8px;
   border: none;
+}
+
+.why-us {
+  color: var(--dull_font);
+  background-color: #13c0b7d4;
+  border-radius: 0 0 10px 10px;
+}
+
+.why-us h2 {
+  color: #fff;
+}
+
+.why-us ul {
+  margin-bottom: 5px;
+}
+
+footer {
+  position: absolute;
+  display: flex;
+  align-self: end;
+  width: 100%;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 40px;
+  }
+
+  .main-container {
+    margin: 100px 450px;
+  }
+
+  .desktop-sub {
+    display: flex;
+  }
+
+  .subscription {
+    width: 50%;
+    border-radius: 0 0 0 10px;
+  }
+
+  .why-us {
+    width: 50%;
+    border-radius: 0 0 10px 0;
+  }
+
+  .top-section p {
+    font-size: 17px;
+  }
+
+  .signup-btn:hover {
+    background-color: antiquewhite;
+    color: black;
+  }
 }
