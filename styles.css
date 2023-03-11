@@ -1,6 +1,7 @@
-:root{
+:root {
   --primary: #13c0b7;
   --secondary: #c6e921;
+  --dull_font: #ffffffba;
 }
 
 * {
@@ -23,13 +24,19 @@ body {
   margin: 60px 20px;
 }
 
+.container {
+  padding: 15px;
+}
+
 .top-section {
   background-color: #fff;
-  padding: 15px;
+  /* padding: 15px; */
   border-radius: 10px 10px 0 0;
 }
 
-.top-section h1, h2, p {
+.top-section h1,
+h2,
+p {
   margin: 10px 0;
 }
 
@@ -46,4 +53,38 @@ body {
 .top-section p {
   color: #00000075;
   font-size: 16px;
+}
+
+.subscription {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.subscription h2 {
+  font-size: 18px;
+}
+
+.subscription p {
+  font-size: 16px;
+  color: var(--dull_font);
+}
+
+.dollar {
+  font-size: 25px;
+  padding-right: 5px;
+  font-weight: 500;
+}
+
+.per {
+  color: #ffffff6e;
+}
+
+.signup-btn {
+  width: 100%;
+  background-color: var(--secondary);
+  color: #fff;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
 }
